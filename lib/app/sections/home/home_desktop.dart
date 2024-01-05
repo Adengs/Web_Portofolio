@@ -20,7 +20,7 @@ class HomeDesktop extends StatelessWidget {
     var theme = Theme.of(context);
 
     return SizedBox(
-      height: 80.h,
+      height: 90.h,
       child: Padding(
         padding: EdgeInsets.symmetric(horizontal: 10.w),
         child: Row(
@@ -33,13 +33,14 @@ class HomeDesktop extends StatelessWidget {
                 mainAxisSize: MainAxisSize.min,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
+                  Space.y(5.5.w)!,
                   Row(
                     mainAxisSize: MainAxisSize.min,
                     crossAxisAlignment: CrossAxisAlignment.end,
                     children: [
                       Text(hellotag,
                           style: const TextStyle(
-                            fontSize: 25,
+                            fontSize: 20,
                             fontWeight: FontWeight.w100,
                           )),
                       EntranceFader(
@@ -53,17 +54,17 @@ class HomeDesktop extends StatelessWidget {
                   Space.y(0.5.w)!,
                   Text(yourname,
                       style: const TextStyle(
-                        fontSize: 50,
+                        fontSize: 45,
                         fontWeight: FontWeight.w600,
                       )),
                   Row(
-                    crossAxisAlignment: CrossAxisAlignment.end,
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      const Text("A ",
-                          style: TextStyle(
-                            fontSize: 32,
-                            fontWeight: FontWeight.w400,
-                          )),
+                      // const Text("A ",
+                      //     style: TextStyle(
+                      //       fontSize: 32,
+                      //       fontWeight: FontWeight.w400,
+                      //     )),
                       AnimatedTextKit(
                         isRepeatingAnimation: true,
                         repeatForever: true,
@@ -76,7 +77,7 @@ class HomeDesktop extends StatelessWidget {
                     padding: EdgeInsets.only(right: 10.w),
                     child: Text(miniDescription,
                         style: TextStyle(
-                          fontSize: isFontSize(context, 20),
+                          fontSize: isFontSize(context, 16),
                           fontWeight: FontWeight.w400,
                           color: theme.textColor.withOpacity(0.6),
                         )),
@@ -91,7 +92,9 @@ class HomeDesktop extends StatelessWidget {
                 ],
               ),
             ),
-            const ZoomAnimations(),
+            Container(
+                // padding: const EdgeInsets.all(5.0),
+                child: const ZoomAnimations()),
           ],
         ),
       ),

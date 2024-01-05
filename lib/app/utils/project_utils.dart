@@ -1,12 +1,12 @@
 class ProjectUtils {
   final String banners;
-  final String icons;
+  // final String icons;
   final String titles;
   final String description;
   final String links;
   ProjectUtils({
     required this.banners,
-    required this.icons,
+    // required this.icons,
     required this.titles,
     required this.description,
     required this.links,
@@ -15,35 +15,35 @@ class ProjectUtils {
 
 List<ProjectUtils> projectUtils = [
   ProjectUtils(
-    banners: 'assets/imgs/02.png',
-    icons: 'assets/imgs/flutter.png',
-    titles: 'Awesome Social Media App',
+    banners: 'assets/imgs/kepul.png',
+    // icons: 'assets/imgs/flutter.png',
+    titles: 'Aplikasi Booking Service & Online Shop',
     description:
-        'This is a just Fully functional Social media App by using flutter, source code is also available, check below.',
-    links: 'https://github.com/sudeshnb/poetically-.git',
+        'Aplikasi dengan nama SiTepat ini berfungsi untuk booking service dan membeli berbagai macam sparepart motor secara online.',
+    links: 'https://github.com/Adengs/Sitepat',
   ),
   ProjectUtils(
-    banners: 'assets/imgs/1.png',
-    icons: 'assets/imgs/flutter.png',
-    titles: 'Awesome CRM UI',
+    banners: 'assets/imgs/myoffice.PNG',
+    // icons: 'assets/imgs/flutter.png',
+    titles: 'Aplikasi Absensi Karyawan',
     description:
-        'This is a just CRM UI Design using Figma, file is also available, check below.',
-    links: 'https://github.com/sudeshnb/',
+        'Aplikasi ini ditujukan untuk membantu pencatatan waktu dan manajemen kehadiran karyawan, yang tentunya dapat mempermudah pencatatan absensi karyawan, izin serta cuti, laporan lokasi absen, dan pemantauan kinerja.',
+    links: 'https://github.com/Adengs/MyOffice',
   ),
   ProjectUtils(
-    banners: 'assets/imgs/03.png',
-    icons: 'assets/imgs/flutter.png',
-    titles: 'Exercise App',
+    banners: 'assets/imgs/sitepat.png',
+    // icons: 'assets/imgs/flutter.png',
+    titles: 'Aplikasi Driver Bank Sampah',
     description:
-        'This is a just Fully function Exercise App by using flutter, source code is also available, check below.',
-    links: 'https://github.com/sudeshnb/elderly_exercise_app.git',
+        'Aplikasi ini diperuntukan bagi para Driver Bank Sampah yang dapat digunakan sebagai sitem pengecekan dan pemrosesan order, serta dapat melakukan penjemputan barang berdasarkan lokasi yang dicantumkan oleh customer.',
+    links: 'https://github.com/Adengs/DiverKepul',
   ),
   ProjectUtils(
-    banners: 'assets/imgs/04.png',
-    icons: 'assets/imgs/flutter.png',
-    titles: 'Awesome Plant App UI',
+    banners: 'assets/imgs/pdam.png',
+    // icons: 'assets/imgs/flutter.png',
+    titles: 'Aplikasi Cek Meteran Air',
     description:
-        'This is a just Plant App UI by using flutter, source code is also available, check below.',
-    links: 'https://github.com/sudeshnb/flutter_plant_app.git',
+        'Aplikasi Cek Meteran Air merupakan aplikasi yang difungsikan untuk petugas PAM mencatat dan melaporkan total penggunaan bulanan yang tertera pada meteran air setiap rumah.',
+    links: 'https://github.com/Adengs/PDAM',
   ),
 ];

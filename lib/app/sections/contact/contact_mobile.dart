@@ -17,11 +17,11 @@ class ContactMobileTab extends StatelessWidget {
     return Column(
       children: [
         Space.y(10.w)!,
-        CustomSectionHeading(text: contactHeadding),
-        Space.y(3.w)!,
+        const CustomSectionHeading(text: 'Kontak Saya'),
+        Space.y(1.w)!,
         Padding(
           padding: EdgeInsets.symmetric(horizontal: 10.w),
-          child: CustomSectionSubHeading(text: contactSubHeadding),
+          child: const CustomSectionSubHeading(text: 'Hubungi saya pada konyak dibawah ini'),
         ),
         Space.y(5.w)!,
         InkWell(
@@ -31,7 +31,7 @@ class ContactMobileTab extends StatelessWidget {
             decoration: BoxDecoration(
                 gradient: buttonGradi, borderRadius: BorderRadius.circular(10)),
             child: const Text(
-              'Get Started',
+              'Hubungi',
               style: TextStyle(
                 fontSize: 18,
                 fontWeight: FontWeight.w500,
@@ -40,7 +40,7 @@ class ContactMobileTab extends StatelessWidget {
             ),
           ),
         ),
-        Space.y(10.w)!,
+        Space.y(5.w)!,
         Wrap(
             alignment: WrapAlignment.center,
             runSpacing: 50,

@@ -14,10 +14,10 @@ class CustomSectionHeading extends StatelessWidget {
         text,
         style: const TextStyle(fontSize: 56),
       ),
-      tablet: Text(
-        text,
-        style: const TextStyle(fontSize: 36),
-      ),
+      // tablet: Text(
+      //   text,
+      //   style: const TextStyle(fontSize: 36),
+      // ),
       mobile: Text(
         text,
         style: const TextStyle(fontSize: 26),
@@ -44,14 +44,14 @@ class CustomSectionSubHeading extends StatelessWidget {
           fontSize: 18,
         ),
       ),
-      tablet: Text(
-        text,
-        textAlign: TextAlign.center,
-        style: TextStyle(
-          color: theme.textColor.withOpacity(0.6),
-          fontSize: 16,
-        ),
-      ),
+      // tablet: Text(
+      //   text,
+      //   textAlign: TextAlign.center,
+      //   style: TextStyle(
+      //     color: theme.textColor.withOpacity(0.6),
+      //     fontSize: 16,
+      //   ),
+      // ),
       mobile: Text(
         text,
         textAlign: TextAlign.center,

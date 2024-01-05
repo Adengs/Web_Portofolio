@@ -18,6 +18,7 @@ class HomeMobile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    var theme = Theme.of(context);
     return Padding(
       padding: EdgeInsets.only(left: 10.w, top: 10.h, right: 10.w),
       child: Column(
@@ -42,17 +43,24 @@ class HomeMobile extends StatelessWidget {
               fontWeight: FontWeight.w600,
             ),
           ),
-          Space.y(1.w)!,
+          // Space.y(0.5.w)!,
+          const EntranceFader(
+            offset: Offset(0, 0),
+            delay: Duration(seconds: 1),
+            duration: Duration(milliseconds: 800),
+            child: ZoomAnimations(),
+          ),
+          Space.y(2.w)!,
           Row(
-            crossAxisAlignment: CrossAxisAlignment.end,
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text(
-                "A ",
-                style: TextStyle(
-                  fontSize: isFontSize(context, 18),
-                  fontWeight: FontWeight.w400,
-                ),
-              ),
+              // Text(
+              //   "A ",
+              //   style: TextStyle(
+              //     fontSize: isFontSize(context, 18),
+              //     fontWeight: FontWeight.w400,
+              //   ),
+              // ),
               AnimatedTextKit(
                 animatedTexts: mobileList,
                 repeatForever: true,
@@ -60,8 +68,19 @@ class HomeMobile extends StatelessWidget {
               ),
             ],
           ),
+          Space.y(1.5.w)!,
+          Padding(
+            padding: EdgeInsets.only(right: 10.w),
+            child: Text(miniDescription,
+                style: TextStyle(
+                  fontSize: isFontSize(context, 12),
+                  fontWeight: FontWeight.w400,
+                  color: theme.textColor.withOpacity(0.6),
+                )),
+          ),
+          // Space.y(15.w)!,
 
-          Space.y(2.w)!,
+          Space.y(5.w)!,
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
@@ -71,12 +90,12 @@ class HomeMobile extends StatelessWidget {
                   html.window.open(resume, "pdf");
                 },
               ),
-              const EntranceFader(
-                offset: Offset(0, 0),
-                delay: Duration(seconds: 1),
-                duration: Duration(milliseconds: 800),
-                child: ZoomAnimations(),
-              )
+              // const EntranceFader(
+              //   offset: Offset(0, 0),
+              //   delay: Duration(seconds: 1),
+              //   duration: Duration(milliseconds: 800),
+              //   child: ZoomAnimations(),
+              // )
             ],
           ),
         ],

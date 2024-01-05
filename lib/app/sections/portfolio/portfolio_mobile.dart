@@ -18,12 +18,12 @@ class PortfolioMobileTab extends StatelessWidget {
     double height = MediaQuery.of(context).size.height;
     return Column(
       children: [
-        const CustomSectionHeading(text: "\nProjects"),
-        Space.y(3.w)!,
-        Padding(
-          padding: EdgeInsets.symmetric(horizontal: 10.w),
-          child: CustomSectionSubHeading(text: protfolioSubHeading),
-        ),
+        const CustomSectionHeading(text: "\nPortofolio"),
+        // Space.y(3.w)!,
+        // Padding(
+        //   padding: EdgeInsets.symmetric(horizontal: 10.w),
+        //   child: CustomSectionSubHeading(text: protfolioSubHeading),
+        // ),
         Space.y(5.w)!,
         CarouselSlider.builder(
           itemCount: projectUtils.length,
@@ -41,15 +41,15 @@ class PortfolioMobileTab extends StatelessWidget {
             enableInfiniteScroll: false,
           ),
         ),
-        Space.y(3.w)!,
+        Space.y(5.w)!,
         OutlinedButton(
           onPressed: () => openURL(gitHub),
           child: const Padding(
             padding: EdgeInsets.all(8.0),
             child: Text(
-              'See More',
+              'Lihat lebih banyak',
               style: TextStyle(
-                fontSize: 16,
+                fontSize: 13,
                 fontWeight: FontWeight.w600,
               ),
             ),

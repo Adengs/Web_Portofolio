@@ -10,7 +10,7 @@ class Portfolio extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Responsive(
       mobile: PortfolioMobileTab(),
-      tablet: PortfolioMobileTab(),
+      // tablet: PortfolioMobileTab(),
       desktop: PortfolioDesktop(),
     );
   }

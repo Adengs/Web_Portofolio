@@ -11,7 +11,7 @@ class Contact extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Responsive(
       mobile: ContactMobileTab(),
-      tablet: ContactMobileTab(),
+      // tablet: ContactMobileTab(),
       desktop: ContactDesktop(),
     );
   }

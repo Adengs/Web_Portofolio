@@ -42,7 +42,7 @@ class MainPage extends StatelessWidget {
         child: Responsive(
           desktop: _NavbarDesktop(),
           mobile: _NavBarTablet(),
-          tablet: _NavBarTablet(),
+          // tablet: _NavBarTablet(),
         ),
       ),
       drawer: !Responsive.isDesktop(context) ? const _MobileDrawer() : null,

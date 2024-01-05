@@ -13,7 +13,7 @@ class ColorChageButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return Responsive(
       desktop: DesktopCCButton(text: text, onTap: onTap),
-      tablet: TabCCButton(text: text, onTap: onTap),
+      // tablet: TabCCButton(text: text, onTap: onTap),
       mobile: MobileCCButton(text: text, onTap: onTap),
     );
   }

@@ -68,13 +68,13 @@ class HomeTab extends StatelessWidget {
                   child: Row(
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
-                      Text(
-                        "A ",
-                        style: TextStyle(
-                          fontSize: isFontSize(context, 24),
-                          fontWeight: FontWeight.w400,
-                        ),
-                      ),
+                      // Text(
+                      //   "A ",
+                      //   style: TextStyle(
+                      //     fontSize: isFontSize(context, 24),
+                      //     fontWeight: FontWeight.w400,
+                      //   ),
+                      // ),
                       AnimatedTextKit(
                         animatedTexts: tabList,
                         isRepeatingAnimation: true,
@@ -88,7 +88,7 @@ class HomeTab extends StatelessWidget {
                   child: Text(
                     miniDescription,
                     style: TextStyle(
-                        fontSize: isFontSize(context, 16),
+                        fontSize: isFontSize(context, 14),
                         fontWeight: FontWeight.w100,
                         color: theme.textColor.withOpacity(0.6)),
                   ),

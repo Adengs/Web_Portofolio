@@ -24,10 +24,10 @@ class _PortfolioDesktopState extends State<PortfolioDesktop> {
       padding: EdgeInsets.symmetric(horizontal: size.width / 8),
       child: Column(
         children: [
-          const CustomSectionHeading(text: "\nProjects"),
+          const CustomSectionHeading(text: "\nPortofolio"),
           Space.y(1.w)!,
-          CustomSectionSubHeading(text: protfolioSubHeading),
-          Space.y(2.w)!,
+          // CustomSectionSubHeading(text: protfolioSubHeading),
+          // Space.y(2.w)!,
           Wrap(
             alignment: WrapAlignment.start,
             crossAxisAlignment: WrapCrossAlignment.start,
@@ -46,10 +46,10 @@ class _PortfolioDesktopState extends State<PortfolioDesktop> {
             child: const Padding(
               padding: EdgeInsets.all(8.0),
               child: Text(
-                'See More',
+                'Lihat lebih banyak',
                 style: TextStyle(
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold,
+                  fontSize: 18,
+                  fontWeight: FontWeight.w500,
                 ),
               ),
             ),
